@@ -52,23 +52,7 @@ public class AboutUsActivity extends AppCompatActivity implements NavigationView
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(AboutUsActivity.this, android.R.style.Theme_DeviceDefault_Dialog);
-            alertDialogBuilder
-                    .setMessage("Do you want to exit the App?")
-                    .setCancelable(false)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                        @SuppressLint("NewApi")
-                        public void onClick(DialogInterface dialog, int id) {
-                            finishAffinity();
-                        }
-                    })
-                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            super.onBackPressed();
         }
     }
 

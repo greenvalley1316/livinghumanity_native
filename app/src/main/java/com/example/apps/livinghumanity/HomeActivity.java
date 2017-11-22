@@ -1,5 +1,9 @@
 package com.example.apps.livinghumanity;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -55,7 +59,23 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(HomeActivity.this, android.R.style.Theme_DeviceDefault_Dialog);
+            alertDialogBuilder
+                    .setMessage("Do you want to exit the App?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @SuppressLint("NewApi")
+                        public void onClick(DialogInterface dialog, int id) {
+                            finishAffinity();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
         }
     }
 
@@ -69,18 +89,23 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_home) {
             Toast.makeText(getApplicationContext(), "You are in Home page.", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_about_us) {
-            Toast.makeText(getApplicationContext(), "About Us page is not ready.", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, AboutUsActivity.class));
+            //Toast.makeText(getApplicationContext(), "About Us page is not ready.", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_services) {
-            Toast.makeText(getApplicationContext(), "Services page is not ready.", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, ServicesActivity.class));
+            //Toast.makeText(getApplicationContext(), "Services page is not ready.", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(getApplicationContext(), "Gallery page is not ready.", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, GalleryActivity.class));
+            //Toast.makeText(getApplicationContext(), "Gallery page is not ready.", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_faq) {
-            Toast.makeText(getApplicationContext(), "FAQ page is not ready.", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, FaqActivity.class));
+            //Toast.makeText(getApplicationContext(), "FAQ page is not ready.", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_contact_us) {
-            Toast.makeText(getApplicationContext(), "Contact Us page is not ready.", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, ContactUsActivity.class));
+            //Toast.makeText(getApplicationContext(), "Contact Us page is not ready.", Toast.LENGTH_SHORT).show();
 
         }
 

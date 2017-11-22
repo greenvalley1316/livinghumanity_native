@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
                 break;
             case R.id.fb_follow:
-                Toast.makeText(MainActivity.this, "Bhaag bhosdi ke", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "FB login karna parega. Soch le...", Toast.LENGTH_LONG).show();
                 break;
             case R.id.youtube:
-                Toast.makeText(MainActivity.this, "Tu to CHUTIYA hai be", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Subscribe zarur karna. Samjha...", Toast.LENGTH_LONG).show();
                 break;
         }
     }
