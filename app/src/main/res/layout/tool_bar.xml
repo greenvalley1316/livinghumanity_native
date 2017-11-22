@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_top"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Title"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+
+</android.support.v7.widget.Toolbar>
+
+
+
+<!--<android.support.v7.widget.Toolbar-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:elevation="10dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:layout_gravity="center_horizontal">-->
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Title"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="20dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_centerInParent="true"/>-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/info_btn"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/living_humanity_logo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="right"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"/>&ndash;&gt;-->
+
+
+
+<!--</android.support.v7.widget.Toolbar>-->

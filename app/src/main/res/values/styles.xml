@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Base.Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_services">Services</string>
+    <string name="nav_galleries">Galleries</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_contact_us">Contact Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Services</item>
+        <item>Galleries</item>
+        <item>FAQ</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    <style name="AppTheme.NavigationView" >
+        <item name="android:listDivider">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!--<string name="activity_title_about_us">About Us</string>-->
+    <!--<string name="activity_title_privacy_policy">Privacy Policy</string>-->
+    <!--<string name="action_clear_all">Clear All</string>-->
+    <!--<string name="action_logout">Logout</string>-->
+    <!--<string name="action_mark_all_read">Mark All as Read</string>-->
+    <!--<string name="privacy_policy">Privacy Policy</string>-->
+
+</resources>
